@@ -13,7 +13,7 @@ limit = int(sys.argv[1])
 csv_reader = csv.reader(open("./top-1m.csv"))
 mxlist = []
 for line in csv_reader:
-    mxlist.append(line[1])
+    mxlist.append(line[0])
     if len(mxlist) == limit:
         break
 
