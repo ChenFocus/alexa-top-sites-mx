@@ -1,29 +1,28 @@
-# A Brief Research in Mail Service Used by Organisations 
+# *A Brief Research in Mail Service Used by Organisations*
 
 **Author:** Zeji Chen, student @ [Lancaster University](https://lancaster.ac.uk).
+
+---------------
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
 - [Introduction](#introduction)
-  - [Aim of Research](#aim-of-research)
 - [Datasets Used](#datasets-used)
   - [Alexa Top 1M Sites](#alexa-top-1m-sites)
-  - [World Global University Dataset](#world-global-university-dataset)
+  - [World Global University Dataset](#world-university-dataset)
   - [Datasets Availability](#datasets-availability)
 - [Method](#method)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-global-university-dataset)
+  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
 - [Results](#results)
   - [Alexa Dataset](#alexa-dataset)
-  - [Global University Dataset](#global-university-dataset)
+  - [Global University Dataset](#university-dataset)
 - [Simple Conclusions](#simple-conclusions)
   - [Result Tables](#result-tables)
-    - [Technology Sector - From Alexa Top 1M Dataset](#technology-sector---from-alexa-top-1m-dataset)
-    - [Education Sector - From Global University Dataset](#education-sector---from-global-university-dataset)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
@@ -37,7 +36,7 @@ The data, scripts and other files of this project is made public at [https://git
 
 ### Aim of Research
 
-This research attempts to find out the greater market share occupier by looking at a large sample of organisations' domains in both technology and education sector. Please refer to [Dataset Used](#datasets-used).
+This research attempts to find out the greater market share occupier between [Gmail](https://www.google.com/intl/en-GB/gmail/about/#) and [Outlook](https://www.microsoft.com/en-gb/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook), by looking at a large sample of organisations' domains in both technology and education sector. Please refer to [Dataset Used](#datasets-used).
 
 ## Datasets Used
 
@@ -152,7 +151,7 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 
 ### Alexa Dataset
 
-| Dataset   Name/Variation | Gmail Counts | Outlook Counts | Others Counts | N/A Count | Total Counts | Total Valid Counts | Calculated Gmail Share | Calculated Outlook Share | Gmail Outcompete Outlook in   Technology Sector By |
+| Dataset   Name/Variation | Gmail Counts | Outlook Counts | Others Counts | N/A Counts | Total Counts | Total Valid Counts | Calculated Gmail Share | Calculated Outlook Share | Gmail Outcompete Outlook in   Technology Sector By |
 |:------------------------:|:------------:|:--------------:|:-------------:|:---------:|:------------:|:------------------:|:----------------------:|:------------------------:|:--------------------------------------------------:|
 |  Alexa Top 1M - 1k list  |      305     |       83       |      524      |     88    |     1000     |         912        | 33.4%                  | 9.1%                     | 73%                                                |
 |  Alexa Top 1M - 10k list |     2779     |       873      |      4961     |    1387   |     10000    |        8613        | 32.3%                  | 10.1%                    | 69%                                                |
@@ -162,7 +161,7 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 
 ### Global University Dataset
 
-|      Dataset   Name/Variation     | Gmail Counts | Outlook Counts | Others Counts | N/A Count | Total Counts | Total Valid Counts | Calculated Gmail Share | Calculated Outlook Share | Outlook Outcompete Gmail in   Education Sector By |
+|      Dataset   Name/Variation     | Gmail Counts | Outlook Counts | Others Counts | N/A Counts | Total Counts | Total Valid Counts | Calculated Gmail Share | Calculated Outlook Share | Outlook Outcompete Gmail in   Education Sector By |
 |:---------------------------------:|:------------:|:--------------:|:-------------:|:---------:|:------------:|:------------------:|:----------------------:|:------------------------:|:-------------------------------------------------:|
 |       World University list       |     1296     |      2158      |      4691     |    1628   |     9773     |        8145        | 15.9%                  | 26.5%                    | 40%                                               |
 | World University list - US   only |      298     |       923      |      876      |    273    |     2370     |        2097        | 14.2%                  | 44.0%                    | 68%                                               |
@@ -170,7 +169,7 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 
 ## Simple Conclusions
 
-From the results, **Gmail leads the competition in the technology sector** by occupying 33.4% market share in the Top 1000 websites ranked by Alexa. This data is extended into 32.3%, 27.2% when 10k, 100k top sites are used as samples.
+From the results, **Gmail leads the competition in the technology sector** by occupying 33.4% market share in the Top 1000 websites ranked by Alexa. This data is extended into 32.3%, 27.2% when 10k, 100k top sites are used as samples. From results available, Gmail beats Outlook in the technology sector with at least 60% more market share.
 
 **Outlook outcompetes Gmail in the education sector**, occupying 44.0% and 46.3% market share in education section in US & UK respectively, outcompeting Gmail with 68% and 87% more market share.
 
