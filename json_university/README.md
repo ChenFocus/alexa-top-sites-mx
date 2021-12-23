@@ -1,4 +1,4 @@
 ```bash
-wget raw.githubusercontent.comHipouniversity-domains-listmasterworld_universities_and_domains.json
+wget raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
 ```
 
