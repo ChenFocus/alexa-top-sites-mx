@@ -7,20 +7,23 @@
 **Table of Contents**
 
 - [Introduction](#introduction)
+  - [Aim of Research](#aim-of-research)
 - [Datasets Used](#datasets-used)
   - [Alexa Top 1M Sites](#alexa-top-1m-sites)
-  - [World Global University Dataset](#world-university-dataset)
+  - [World Global University Dataset](#world-global-university-dataset)
   - [Datasets Availability](#datasets-availability)
 - [Method](#method)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
+  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-global-university-dataset)
 - [Results](#results)
   - [Alexa Dataset](#alexa-dataset)
-  - [Global University Dataset](#university-dataset)
+  - [Global University Dataset](#global-university-dataset)
 - [Simple Conclusions](#simple-conclusions)
   - [Result Tables](#result-tables)
+    - [Technology Sector - From Alexa Top 1M Dataset](#technology-sector---from-alexa-top-1m-dataset)
+    - [Education Sector - From Global University Dataset](#education-sector---from-global-university-dataset)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
