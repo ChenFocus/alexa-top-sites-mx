@@ -4,21 +4,9 @@ Author: Zeji Chen, student at @LancasterUniversity
 
 ## Table of Content
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+<!-- START doctoc -->
 
-- [Introduction](#introduction)
-- [Method](#method)
-- [Accuracies/Error Analysis](#accuracieserror-analysis)
-- [Method](#method-1)
-  - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
-- [Results](#results)
-  - [Alexa Dataset](#alexa-dataset)
-  - [University Dataset](#university-dataset)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- END doctoc -->
  
 ## Introduction
 
@@ -133,3 +121,23 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 |       World University list       |     1296     |      2158      |      4691     |    1628   |     9773     |        8145        | 15.9%                  | 26.5%                    | 40%                                               |
 | World University list - US   only |      298     |       923      |      876      |    273    |     2370     |        2097        | 14.2%                  | 44.0%                    | 68%                                               |
 | World University list - UK   only |       8      |       63       |       65      |     25    |      161     |         136        | 5.9%                   | 46.3%                    | 87%                                               |
+
+## Simple Conclusions
+
+From the results, Gmail leads the competition in the technology sector by occupying 33.4% market share in the Top 1000 websites ranked by Alexa.
+
+Outlook outcompetes Gmail in the education sector, occupying 44.0% and 46.3% market share in education section in US & UK respectively.
+
+### Result Tables
+
+| Dataset   Name/Variation | Calculated Gmail Share | Gmail Outcompete Outlook in Technology   Sector By |
+|:------------------------:|------------------------|----------------------------------------------------|
+|  Alexa Top 1M - 1k list  | 33.4%                  | 73%                                                |
+|  Alexa Top 1M - 10k list | 32.3%                  | 69%                                                |
+| Alexa Top 1M - 100k list | 27.2%                  | 62%                                                |
+
+|      Dataset   Name/Variation     | Calculated Outlook Share | Outlook Outcompete Gmail in   Education Sector By |
+|:---------------------------------:|--------------------------|---------------------------------------------------|
+|       World University list       | 26.5%                    | 40%                                               |
+| World University list - US   only | 44.0%                    | 68%                                               |
+| World University list - UK   only | 46.3%                    | 87%                                               |
