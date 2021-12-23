@@ -7,23 +7,20 @@
 **Table of Contents**
 
 - [Introduction](#introduction)
-  - [Aim of Research](#aim-of-research)
 - [Datasets Used](#datasets-used)
   - [Alexa Top 1M Sites](#alexa-top-1m-sites)
-  - [World Global University Dataset](#world-global-university-dataset)
+  - [World Global University Dataset](#world-university-dataset)
   - [Datasets Availability](#datasets-availability)
 - [Method](#method)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-global-university-dataset)
+  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
 - [Results](#results)
   - [Alexa Dataset](#alexa-dataset)
-  - [Global University Dataset](#global-university-dataset)
+  - [Global University Dataset](#university-dataset)
 - [Simple Conclusions](#simple-conclusions)
   - [Result Tables](#result-tables)
-    - [Technology Sector - From Alexa Top 1M Dataset](#technology-sector---from-alexa-top-1m-dataset)
-    - [Education Sector - From Global University Dataset](#education-sector---from-global-university-dataset)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
@@ -51,7 +48,7 @@ Alexa Top 1M Sites Dataset: [http://s3.amazonaws.com/alexa-static/top-1m.csv.zip
 
 > *Please be aware that although this data is from Alexa officially, some [said](https://hackertarget.com/top-million-site-list-download/) it's no longer updated.*
 
-World Global University Dataset: [https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json)
+Global University Dataset: [https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json)
 
 > *Please be aware that as this data is from an open source project, which its content may change anytime in the future, if you would like to get the same dataset as this project, at the date of this research is conducted, please instead download the data from this repository, or at [https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json).*
 
