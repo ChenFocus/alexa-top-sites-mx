@@ -8,6 +8,10 @@
 
 - [Introduction](#introduction)
 - [Method](#method)
+  - [Datasets Used](#datasets-used)
+    - [Alexa Top 1M Sites](#alexa-top-1m-sites)
+    - [World University Dataset](#world-university-dataset)
+    - [Datasets Availability](#datasets-availability)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
