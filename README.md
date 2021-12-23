@@ -7,31 +7,30 @@
 **Table of Contents**
 
 - [Introduction](#introduction)
-  - [Aim of Research](#aim-of-research)
 - [Datasets Used](#datasets-used)
   - [Alexa Top 1M Sites](#alexa-top-1m-sites)
-  - [World Global University Dataset](#world-global-university-dataset)
+  - [World Global University Dataset](#world-university-dataset)
   - [Datasets Availability](#datasets-availability)
 - [Method](#method)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-global-university-dataset)
+  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
 - [Results](#results)
   - [Alexa Dataset](#alexa-dataset)
-  - [Global University Dataset](#global-university-dataset)
+  - [Global University Dataset](#university-dataset)
 - [Simple Conclusions](#simple-conclusions)
   - [Result Tables](#result-tables)
-    - [Technology Sector - From Alexa Top 1M Dataset](#technology-sector---from-alexa-top-1m-dataset)
-    - [Education Sector - From Global University Dataset](#education-sector---from-global-university-dataset)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
 ## Introduction
 
-This project, or research, is conducted in supplyment of evidence for the author's essay assignment. This project uses [Python](https://python.rg) as a [crawler](https://en.wikipedia.org/wiki/Web_crawler) to verify [MX Records](https://en.wikipedia.org/wiki/MX_record) (mail server record) for individual domains. This code repository contains some files involved in the early stage of this project, that may not be relevant.
+This project, or research, is conducted in supplyment of evidence for the author's essay assignment. This project uses [Python](https://python.rg) as a [crawler](https://en.wikipedia.org/wiki/Web_crawler) to verify [MX Records](https://en.wikipedia.org/wiki/MX_record) (mail server record) for individual domains.
 
 The Python crawler used is written by **Ryan Zhao** [(email)](mailto:lin.zhao-3@student.manchester.ac.uk) - student at [Manchester University](https://en.wikipedia.org/wiki/University_of_Manchester), UK. Ryan has fully agreed and authorised the use of his script on this research.
+
+The data, scripts and other files of this project is made public at [https://github.com/ChenFocus/alexa-top-sites-mx](https://github.com/ChenFocus/alexa-top-sites-mx). The code repository contains some files involved in the early stage of this project, that may not be relevant.
 
 ### Aim of Research
 
