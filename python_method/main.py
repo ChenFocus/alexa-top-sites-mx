@@ -8,9 +8,10 @@ Gmail = 0
 Others = 0
 NA = 0
 progress = 0
+file_address = "./top-1m.csv"
 limit = int(sys.argv[1])
 
-csv_reader = csv.reader(open("./top-1m.csv"))
+csv_reader = csv.reader(open(file_address))
 mxlist = []
 for line in csv_reader:
     mxlist.append(line[0])
