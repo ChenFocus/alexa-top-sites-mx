@@ -26,6 +26,25 @@ This project, or research, is conducted in supplyment of evidence for my essay a
 
 ## Method
 
+### Datasets Used
+
+#### Alexa Top 1M Sites
+
+Alexa is a web analytic & intelligence company owned by Amazon. The [Alexa World Site Rank](https://www.alexa.com/topsites) is often regarded as the most representive world site rank.
+
+#### World University Dataset
+
+#### Datasets Availability
+
+Alexa Top 1M Sites Dataset: [http://s3.amazonaws.com/alexa-static/top-1m.csv.zip](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip)
+
+> *Please be aware that although this data is from Alexa officially, some [said](https://hackertarget.com/top-million-site-list-download/) it's no longer updated.*
+
+World University Dataset: [https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json)
+
+> *Please be aware that as this data is from an open source project, which its content may change anytime in the future, if you would like to get the same dataset as this project, at the date of this research is conducted, please instead download the data from this repository, or at [https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json).*
+
+
 Through the dig commandline software, one is able to find the MX Record (mail server record) for a domain. By running this command:
 
 ```bash
@@ -67,9 +86,8 @@ Explanation:
 
 ## Accuracies/Error Analysis
 
-This method is somewhat precise. The two main datasets used is from either Alexa, an Amazon company that focus at website intelligence, or the Open Source project xxx.
 
-However, as the Alexa dataset may contain asset domains (domains that are used to solely distribute static file/other recources), such as `dl.google.com`, which `dig +short mx dl.google.com` wouldn't return anything as there is no mail services running on the domain; or, no mail service is ran on the root domain. However, all calculations made from the result will exclude occassions like this.
+As the Alexa dataset may contain asset domains (domains that are used to solely distribute static file/other recources), such as `dl.google.com`, which `dig +short mx dl.google.com` wouldn't return anything as there is no mail services running on the domain; or, no mail service is ran on the root domain. However, all calculations made from the result will exclude occassions like this.
 
 It's known that The World University Dataset may not be complete and contains some inaccurate information (for example, the domain of Lancaster University in the dataset is `lancs.ac.uk`, instead of `lancaster.ac.uk`). This may affect the conclusion drawn from this dataset.
 
@@ -113,6 +131,8 @@ python us_uni.py 2730 | tee result_us_uni.txt # Check for US universities only
 python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 # wait for completion of the script
 ```
+
+> *The conversion of the original `.json` data to `.csv` format is through a series of replace/regrex match/plugin operation conducted in [Visual Studio Code](https://code.visualstudio.com).
 
 ## Results
 
