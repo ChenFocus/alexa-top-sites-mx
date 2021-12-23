@@ -4,9 +4,21 @@ Author: Zeji Chen, student at @LancasterUniversity
 
 ## Table of Content
 
-<!-- START doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-<!-- END doctoc -->
+- [Introduction](#introduction)
+- [Method](#method)
+- [Accuracies/Error Analysis](#accuracieserror-analysis)
+- [Method](#method-1)
+  - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
+  - [Getting the usage of mail service in University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
+- [Results](#results)
+  - [Alexa Dataset](#alexa-dataset)
+  - [University Dataset](#university-dataset)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
 ## Introduction
 
