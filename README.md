@@ -1,6 +1,12 @@
 # A Brief Research in Mail Service Used by Organisations 
 
 Author: Zeji Chen, student at @LancasterUniversity
+
+## Table of Content
+
+<!-- START doctoc -->
+
+<!-- END doctoc -->
  
 ## Introduction
 
