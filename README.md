@@ -1,6 +1,6 @@
 # *A Brief Research in Mail Service Used by Organisations*
 
-**Author:** Zeji Chen, student @ [Lancaster University](https://lancaster.ac.uk).
+**Author:** Zeji Chen [(email)](mailto:z.chen34@lancaster.ac.uk), student @ [Lancaster University](https://lancaster.ac.uk).
 
 ---------------
 
