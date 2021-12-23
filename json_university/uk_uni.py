@@ -10,7 +10,7 @@ NA = 0
 progress = 0
 limit = int(sys.argv[1])
 
-csv_reader = csv.reader(open("./plain_uni_domains.csv"))
+csv_reader = csv.reader(open("./uk_uni_list.csv"))
 mxlist = []
 for line in csv_reader:
     mxlist.append(line[0])
