@@ -1,6 +1,6 @@
 # A Brief Research in Mail Service Used by Organisations 
 
-**Author:** Zeji Chen, student at @LancasterUniversity
+**Author:** Zeji Chen, student @ [Lancaster University](https://lancaster.ac.uk).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -9,16 +9,16 @@
 - [Introduction](#introduction)
 - [Datasets Used](#datasets-used)
   - [Alexa Top 1M Sites](#alexa-top-1m-sites)
-  - [World University Dataset](#world-university-dataset)
+  - [World Global University Dataset](#world-university-dataset)
   - [Datasets Availability](#datasets-availability)
 - [Method](#method)
 - [Accuracies/Error Analysis](#accuracieserror-analysis)
 - [Method](#method-1)
   - [Getting the usage of mail service in Top 1k, 10k, 100k, 1M Alexa Ranked Sites](#getting-the-usage-of-mail-service-in-top-1k-10k-100k-1m-alexa-ranked-sites)
-  - [Getting the usage of mail service in University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
+  - [Getting the usage of mail service in Global University Dataset](#getting-the-usage-of-mail-service-in-university-dataset)
 - [Results](#results)
   - [Alexa Dataset](#alexa-dataset)
-  - [University Dataset](#university-dataset)
+  - [Global University Dataset](#university-dataset)
 - [Simple Conclusions](#simple-conclusions)
   - [Result Tables](#result-tables)
 
@@ -26,7 +26,7 @@
  
 ## Introduction
 
-This project, or research, is conducted in supplyment of evidence for the author's essay assignment. This project uses [Python](https://python.rg) as a [crawler](https://en.wikipedia.org/wiki/Web_crawler) to verify [MX Records](https://en.wikipedia.org/wiki/MX_record) (mail server record) for individual domains. This code repository contains some files that may not be relevant to the final method used and result.
+This project, or research, is conducted in supplyment of evidence for the author's essay assignment. This project uses [Python](https://python.rg) as a [crawler](https://en.wikipedia.org/wiki/Web_crawler) to verify [MX Records](https://en.wikipedia.org/wiki/MX_record) (mail server record) for individual domains. This code repository contains some files involved in the early stage of this project, that may not be relevant.
 
 The Python crawler used is written by **Ryan Zhao** [(email)](mailto:lin.zhao-3@student.manchester.ac.uk) - student at [Manchester University](https://en.wikipedia.org/wiki/University_of_Manchester), UK. Ryan has fully agreed and authorised the use of his script on this research.
 
@@ -36,7 +36,7 @@ The Python crawler used is written by **Ryan Zhao** [(email)](mailto:lin.zhao-3@
 
 [Alexa](https://alexa.com) is a web analytic & intelligence company owned by [Amazon](https://www.aboutamazon.com). The [Alexa World Site Rank](https://www.alexa.com/topsites) is often regarded as the most representive world site rank.
 
-### World University Dataset
+### World Global University Dataset
 
 ### Datasets Availability
 
@@ -44,7 +44,7 @@ Alexa Top 1M Sites Dataset: [http://s3.amazonaws.com/alexa-static/top-1m.csv.zip
 
 > *Please be aware that although this data is from Alexa officially, some [said](https://hackertarget.com/top-million-site-list-download/) it's no longer updated.*
 
-World University Dataset: [https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json)
+World Global University Dataset: [https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json)
 
 > *Please be aware that as this data is from an open source project, which its content may change anytime in the future, if you would like to get the same dataset as this project, at the date of this research is conducted, please instead download the data from this repository, or at [https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json](https://raw.githubusercontent.com/ChenFocus/university-domains-list/master/world_universities_and_domains.json).*
 
@@ -94,7 +94,7 @@ Explanation:
 
 As the Alexa dataset may contain asset domains (domains that are used to solely distribute static file/other recources), such as `software-download.microsoft.com`, which `dig +short mx software-download.microsoft.com` wouldn't return anything as there is no mail services running on the domain; or, no mail service is ran on the root domain. However, all calculations made from the result will exclude occassions like this.
 
-It's known that The World University Dataset may not be complete and contains some inaccurate information (for example, the domain of Lancaster University in the dataset is `lancs.ac.uk`, instead of `lancaster.ac.uk`). This may affect the conclusion drawn from this dataset.
+It's known that The World Global University Dataset may not be complete and contains some inaccurate information (for example, the domain of Lancaster University in the dataset is `lancs.ac.uk`, instead of `lancaster.ac.uk`). This may affect the conclusion drawn from this dataset.
 
 It's also known that different runs of the script may produce slightly different results, as one's DNS record may be failed to be fetched due to server/internet errors. Multiple runs of the script should eliminate this error partially.
 
@@ -121,7 +121,7 @@ A cloud computer (server) is used to calculate results for above targets.
 
 As the Alexa rank list goes further, more irrevelant/personal domains may be recorded, therefore resulting in more inaccurate results.
 
-### Getting the usage of mail service in University Dataset
+### Getting the usage of mail service in Global University Dataset
 
 At a Linux computer:
 ```bash
@@ -137,7 +137,7 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 # wait for completion of the script
 ```
 
-> *The conversion of the original `.json` data to `.csv` format is through a series of replace/regrex match/plugin operation conducted in [Visual Studio Code](https://code.visualstudio.com).
+> *The conversion of the original `.json` data to `.csv` format is through a series of replace/regrex match/plugin operation conducted in [Visual Studio Code](https://code.visualstudio.com).*
 
 ## Results
 
@@ -149,9 +149,9 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 |  Alexa Top 1M - 10k list |     2779     |       873      |      4961     |    1387   |     10000    |        8613        | 32.3%                  | 10.1%                    | 69%                                                |
 | Alexa Top 1M - 100k list |     22527    |      8461      |     51942     |   17070   |    100000    |        82930       | 27.2%                  | 10.2%                    | 62%                                                |
 
-> *Note that the result for the whole 1 million site is currently being calculated by a cloud server. The result of this may be updated in the future.
+> *Note that the result for the whole 1 million site is currently being calculated by a cloud server. The result of this may be updated in the future.*
 
-### University Dataset
+### Global University Dataset
 
 |      Dataset   Name/Variation     | Gmail Counts | Outlook Counts | Others Counts | N/A Count | Total Counts | Total Valid Counts | Calculated Gmail Share | Calculated Outlook Share | Outlook Outcompete Gmail in   Education Sector By |
 |:---------------------------------:|:------------:|:--------------:|:-------------:|:---------:|:------------:|:------------------:|:----------------------:|:------------------------:|:-------------------------------------------------:|
@@ -161,17 +161,21 @@ python uk_uni.py 161 | tee result_uk_uni.txt # Check for UK universities only
 
 ## Simple Conclusions
 
-From the results, Gmail leads the competition in the technology sector by occupying 33.4% market share in the Top 1000 websites ranked by Alexa.
+From the results, **Gmail leads the competition in the technology sector** by occupying 33.4% market share in the Top 1000 websites ranked by Alexa. This data is extended into 32.3%, 27.2% when 10k, 100k top sites are used as samples.
 
-Outlook outcompetes Gmail in the education sector, occupying 44.0% and 46.3% market share in education section in US & UK respectively.
+**Outlook outcompetes Gmail in the education sector**, occupying 44.0% and 46.3% market share in education section in US & UK respectively, outcompeting Gmail with 68% and 87% more market share.
 
 ### Result Tables
+
+#### Technology Sector - From Alexa Top 1M Dataset
 
 | Dataset   Name/Variation | Calculated Gmail Share | Gmail Outcompete Outlook in Technology   Sector By |
 |:------------------------:|------------------------|----------------------------------------------------|
 |  Alexa Top 1M - 1k list  | 33.4%                  | 73%                                                |
 |  Alexa Top 1M - 10k list | 32.3%                  | 69%                                                |
 | Alexa Top 1M - 100k list | 27.2%                  | 62%                                                |
+
+#### Education Sector - From Global University Dataset
 
 |      Dataset   Name/Variation     | Calculated Outlook Share | Outlook Outcompete Gmail in   Education Sector By |
 |:---------------------------------:|--------------------------|---------------------------------------------------|
